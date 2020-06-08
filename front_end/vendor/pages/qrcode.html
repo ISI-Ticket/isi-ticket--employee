@@ -8,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ISI TICKET</title>
     <!-- materialize icons, css & js -->
+    <link rel="icon" type="image/png" sizes="32px32" href="../img/icons/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="16px16" href="../img/icons/icon-72x72.png">
+    <link rel="manifest" href="/manifest.json">
     <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" href="../css/styles.css" rel="stylesheet">
-    <link href="../css/styles.css">
-    <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <link rel="manifest" href="../manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style2.css" />
     <!-- ios support -->
     <link rel="apple-touch-icon" href="../img/icons/icon-96x96.png">
     <meta name="apple-mobile-web-app-status-bar" content="#e33742">
@@ -28,14 +30,17 @@
 
 <body class="grey lighten-4">
 
-    <!-- top nav -->
-
-    <nav class="z-depth-0">
-        <div class="nav-wrapper container">
-            <a href="../pages/qrcode.html">ISI<span>TICKET</span></a>
-            <span class="right grey-text text-darken-1"></span>
-        </div>
-    </nav>
+    <!-- header -->
+    <div class="header-container">
+        <header>
+            <div class="header-title-container">
+                <a href="../pages/pagamento.html" class="header-title">ISI TICKET</a>
+            </div>
+            <div class="header-page-text-container">
+                <h5 class="header-page-text">Validação</h5>
+            </div>
+        </header>
+    </div>
 
 
     <!-- content -->
@@ -47,7 +52,7 @@
         <br>
 
 
-        <center> <video width="50%" height="50%" id="preview"></video></center>
+        <center> <video width="100%" height="100%" id="preview"></video></center>
 
         <script src='../js/scanner.js'></script>
 
