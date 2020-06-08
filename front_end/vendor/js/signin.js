@@ -103,9 +103,9 @@ function signInApi(profile) {
 
         if (data.exists == true) {
             localStorage.setItem('profile', response);
-            window.location.href = './vendor/pages/perfil.html'
+            window.location.href = './vendor/pages/qrcode.html'
         } else {
-            window.location.href = './vendor/pages/registar.html'
+            window.location.href = './vendor/pages/qrcode.html'
             localStorage.setItem('email', profile.email);
             localStorage.setItem('firstname', profile.firstName);
             localStorage.setItem('lastname', profile.lastName);
