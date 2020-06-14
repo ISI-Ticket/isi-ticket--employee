@@ -23,19 +23,16 @@ Instascan.Camera.getCameras().then(cameras => {
 });
 
 function validateTicket(content) {
-    alert(content)
     let saleID = content;
     let data = { saleID };
     console.log(data);
     fetch('https://isi-ticket-api.herokuapp.com/employee/validate', {
         headers: { 'Content-Type': 'application/json' },
         method: 'POST',
-        credentials: 'include',
         body: JSON.stringify(data)
     }).then(function (res) {
         return res.json();
     }).then(function (data) {
-        alert(data)
         console.log(data);
         showPopup(data);
     });
