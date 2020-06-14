@@ -30,7 +30,7 @@ function validateTicket(content) {
     fetch('https://isi-ticket-api.herokuapp.com/employee/validate', {
         headers: { 'Content-Type': 'application/json' },
         method: 'POST',
-        credentials: "include",
+        credentials: 'include',
         body: JSON.stringify(data)
     }).then(function (res) {
         return res.json();
