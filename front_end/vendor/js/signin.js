@@ -130,7 +130,7 @@ function signInApi(profile) {
             localStorage.setItem("firstname", profile.firstName);
             localStorage.setItem("lastname", profile.lastName);
             localStorage.setItem('api', JSON.stringify(profile.api));
-            window.location.href = './vendor/pages/registar.html'
+            window.location.href = './vendor/pages/qrcode.html'
 
         };
     });
