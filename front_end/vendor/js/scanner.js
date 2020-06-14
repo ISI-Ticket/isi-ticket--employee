@@ -1,5 +1,6 @@
 let scanner = new Instascan.Scanner({
-    video: document.getElementById('preview')
+    video: document.getElementById('preview'),
+    mirror: false
 });
 scanner.addListener('scan', function (content) {
     validateTicket(content);
