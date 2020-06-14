@@ -23,7 +23,7 @@ Instascan.Camera.getCameras().then(cameras => {
 });
 
 function validateTicket(content) {
-    alert("chego aqui")
+    alert(content)
     let saleID = content;
     let data = { saleID };
     console.log(data);
@@ -35,6 +35,7 @@ function validateTicket(content) {
     }).then(function (res) {
         return res.json();
     }).then(function (data) {
+        alert(data)
         console.log(data);
         showPopup(data);
     });
