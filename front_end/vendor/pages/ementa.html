@@ -23,7 +23,7 @@
         content="default-src * gap:; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src *; img-src * data: blob: android-webview-video-poster:; style-src * 'unsafe-inline';">
 </head>
 
-<body class="grey lighten-4">
+<body>
 
     <!-- header -->
     <div class="header-container">
@@ -32,34 +32,25 @@
                 <a href="../pages/qrcode.html" class="header-title">ISI TICKET</a>
             </div>
             <div class="header-page-text-container">
-                <h5 class="header-page-text">Validação</h5>
+                <h5 class="header-page-text">Ementa</h5>
             </div>
         </header>
     </div>
 
     <!-- content -->
     <div class="content-container">
-        <br/>
-        <h5 class="title">Leitor QrCode</h5>
-        <div class="divider"></div>
-        <br/>
-        <div class="video">
-            <video id="preview"></video>
-        </div>    
     </div>
 
     <!-- bot nav-->
     <div id="outer" class="navbarbot">
         <div id="inner">
             <a href="../pages/perfil.html"><i class="material-icons">account_box</i></a>
-            <a href="../pages/qrcode.html" class="active"><i class="material-icons active">qr_code</i></a>
-            <a href="../pages/ementa.html"><i class="material-icons"> restaurant_menu</i></a>
+            <a href="../pages/qrcode.html"><i class="material-icons">qr_code</i></a>
+            <a href="../pages/ementa.html" class="active"><i class="material-icons active"> restaurant_menu</i></a>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="../js/app.js"></script>
-    <script src='../js/scanner.js'></script>
 
 </body>
 
