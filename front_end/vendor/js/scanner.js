@@ -26,7 +26,7 @@ function validateTicket(content) {
     let saleID = content;
     let data = { saleID };
     console.log(data);
-    fetch('http://localhost:5000/employee/validate', {
+    fetch('https://isi-ticket-api.herokuapp.com/employee/validate', {
         headers: { 'Content-Type': 'application/json' },
         method: 'POST',
         credentials: "include",
